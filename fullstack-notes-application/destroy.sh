@@ -3,14 +3,14 @@ set -e
 
 NETWORK_NAME_BACKEND="fullstack-notes-application-network-backend"
 NETWORK_NAME_FRONTEND="fullstack-notes-application-network-frontend"
-DB_CONTAINER_VOLUME_NAME="notes-db-data"
-API_IMAGE_NAME="notes-api"
-CLIENT_IMAGE_NAME="notes-client"
-ROUTER_IMAGE_NAME="notes-router"
-API_CONTAINER_NAME="notes-api"
-CLIENT_CONTAINER_NAME="notes-client"
-ROUTER_CONTAINER_NAME="notes-router"
-DB_CONTAINER_NAME="notes-db"
+DB_CONTAINER_VOLUME_NAME="notes-db-data-dev"
+API_IMAGE_NAME="notes-api-dev"
+CLIENT_IMAGE_NAME="notes-client-dev"
+ROUTER_IMAGE_NAME="notes-router-dev"
+API_CONTAINER_NAME="notes-api-dev"
+CLIENT_CONTAINER_NAME="notes-client-dev"
+ROUTER_CONTAINER_NAME="notes-router-dev"
+DB_CONTAINER_NAME="notes-db-dev"
 
 if docker container ls --all | grep -q $ROUTER_CONTAINER_NAME;
 then

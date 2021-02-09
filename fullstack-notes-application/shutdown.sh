@@ -1,10 +1,10 @@
 #!/bin/bash
 set -e
 
-API_CONTAINER_NAME="notes-api"
-CLIENT_CONTAINER_NAME="notes-client"
-ROUTER_CONTAINER_NAME="notes-router"
-DB_CONTAINER_NAME="notes-db"
+API_CONTAINER_NAME="notes-api-dev"
+CLIENT_CONTAINER_NAME="notes-client-dev"
+ROUTER_CONTAINER_NAME="notes-router-dev"
+DB_CONTAINER_NAME="notes-db-dev"
 
 if docker container ls | grep -q $ROUTER_CONTAINER_NAME;
 then
